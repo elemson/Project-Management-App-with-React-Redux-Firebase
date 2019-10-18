@@ -16,7 +16,7 @@ class CreateProject extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.CreateProject(this.state);
+    this.props.createProject(this.state);
   };
 
   render() {
@@ -48,7 +48,7 @@ class CreateProject extends Component {
 }
 const mapDispatchToProps = dispatch => {
   return {
-    CreateProject: project => dispatch(createProject(project))
+    createProject: project => dispatch(createProject(project))
   };
 };
 
