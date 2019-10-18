@@ -4,18 +4,18 @@ import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 
 const projectDetails = props => {
-  const { projects } = props;
-  if (projects) {
+  const { project } = props;
+  if (project) {
     return (
       <div className="container section project-details">
         <div className="card z-depth-0">
           <div className="card-content">
-            <span className="card-title">{projects.title}</span>
-            <p>{projects.content}</p>
+            <span className="card-title">{project.title}</span>
+            <p>{project.content}</p>
           </div>
           <div className="card-action grey lighten-1 grey-text">
             <div>
-              Posted by {projects.authorFirstName} {projects.authorLastName}
+              Posted by {project.authorFirstName} {project.authorLastName}
             </div>
             <div>2nd September, 2019</div>
           </div>
